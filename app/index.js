@@ -114,6 +114,7 @@ module.exports = yeoman.generators.Base.extend({
             this.fs.copy(this.templatePath('workers.js'), this.destinationPath('workers.js'));
 			this.fs.copyTpl(this.templatePath('flightplan.js'), this.destinationPath('flightplan.js'), {appSlug: this.appSlug});
 			this.fs.copy(this.templatePath('gitignore'), this.destinationPath('.gitignore'));
+			this.fs.copy(this.templatePath('jshintrc'), this.destinationPath('.jshintrc'));
 			this.fs.copy(this.templatePath('newrelic.js'), this.destinationPath('newrelic.js'));
 
 			this.fs.copyTpl(

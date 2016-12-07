@@ -10,7 +10,7 @@
     "readmeFilename": "README.md",
     "keywords": [],
     "dependencies": {
-        "restlio": "1.0.1",
+        "restlio": "1.0.2",
         "async": "2.1.4",
         "underscore": "1.8.3",
         "underscore.string": "3.3.4",
