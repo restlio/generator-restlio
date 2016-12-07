@@ -1,6 +1,6 @@
 {
   "name": "generator-restlio",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Yeoman generator",
   "license": "MIT",
   "main": "app/index.js",
@@ -20,7 +20,16 @@
     "app"
   ],
   "keywords": [
-    "yeoman-generator"
+    "yeoman-generator",
+    "express",
+    "mongoose",
+    "rest",
+    "restful",
+    "api",
+    "rest api",
+    "web",
+    "framework",
+    "admin"
   ],
   "dependencies": {
     "yeoman-generator": "^0.18.9",
