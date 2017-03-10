@@ -85,29 +85,10 @@ module.exports = yeoman.generators.Base.extend({
 		app: function () {
 			this.fs.copyTpl(this.templatePath('apidocs'), this.destinationPath('apidocs'));
 			this.fs.copyTpl(this.templatePath('boot'), this.destinationPath('boot'));
-
-			this.fs.copyTpl(
-				this.templatePath('fly/doc.txt'),
-				this.destinationPath('fly/doc.txt'),
-				{appSlug: this.appSlug}
-			);
-
-			this.fs.copyTpl(
-				this.templatePath('fly/fly.json'),
-				this.destinationPath('fly/' + this.appSlug + '.json'),
-				{
-					appName: this.appName,
-					appSlug: this.appSlug,
-					appDesc: this.appDesc
-				}
-			);
-
 			this.mkdir('lib');
 			this.mkdir('model');
 			this.fs.copy(this.templatePath('public'), this.destinationPath('public'));
 			this.mkdir('route');
-			this.mkdir('upstart/generated/' + this.appSlug);
-			this.fs.copy(this.templatePath('upstart/template'), this.destinationPath('upstart/template'));
 			this.fs.copy(this.templatePath('view'), this.destinationPath('view'));
 			this.mkdir('worker');
 			this.fs.copy(this.templatePath('app.js'), this.destinationPath('app.js'));
@@ -115,7 +96,6 @@ module.exports = yeoman.generators.Base.extend({
 			this.fs.copyTpl(this.templatePath('flightplan.js'), this.destinationPath('flightplan.js'), {appSlug: this.appSlug});
 			this.fs.copy(this.templatePath('gitignore'), this.destinationPath('.gitignore'));
 			this.fs.copy(this.templatePath('jshintrc'), this.destinationPath('.jshintrc'));
-			this.fs.copy(this.templatePath('newrelic.js'), this.destinationPath('newrelic.js'));
 
 			this.fs.copyTpl(
 				this.templatePath('package.json'),

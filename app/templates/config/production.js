@@ -106,13 +106,13 @@ module.exports = {
 		transport: 'Console',
 		options: {
 			level: 'debug',
-			humanReadableUnhandledException: true,
-			handleExceptions: true,
-			json: false,
-			colorize: false,
-			prettyPrint: false,
-			showLevel: false,
-			timestamp: false
+			humanReadableUnhandledException: false,
+			handleExceptions: false,
+			json: true,
+			colorize: true,
+			prettyPrint: true,
+			showLevel: true,
+			timestamp: true
 		}
 	},
 

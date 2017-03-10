@@ -1,14 +1,6 @@
 node_modules/*
-
-# exceptions
-# -----------------------------------------------
-
-# -----------------------------------------------
-
 npm-debug.log
 newrelic_agent.log
-
-# Created by https://www.gitignore.io
 
 ### OSX ###
 .DS_Store
@@ -17,7 +9,6 @@ newrelic_agent.log
 
 # Icon must end with two \r
 Icon
-
 
 # Thumbnails
 ._*
@@ -33,17 +24,15 @@ Network Trash Folder
 Temporary Items
 .apdisk
 
-
 ### Linux ###
 *~
 
 # KDE directory preferences
 .directory
 
-
 ### WebStorm ###
-# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
 
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm
 /*.iml
 
 ## Directory-based project format:
